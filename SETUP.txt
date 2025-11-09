@@ -1,0 +1,44 @@
+=== BranDeal - SST Deployment Setup ===
+
+AWS Profile: personal (configured in sst.config.ts)
+
+QUICK START:
+============
+
+1. Set Production Secrets:
+   npx sst secrets set DATABASE_URL "mongodb+srv://..." --stage production
+   npx sst secrets set EMAIL "your-email@mail.me.com" --stage production
+   npx sst secrets set PASSWORD "your-password" --stage production
+   npx sst secrets set SENDER_MAIL "your-sender@mail.me.com" --stage production
+
+2. Deploy to AWS:
+   npm run sst:deploy
+
+3. View deployed URL:
+   After deployment, you'll get a CloudFront URL like:
+   https://d1234abcd.cloudfront.net
+
+COMMANDS:
+=========
+npm run dev          - Local development with SST
+npm run sst:dev      - SST dev mode (live AWS resources)
+npm run sst:deploy   - Deploy to production
+npm run sst:remove   - Remove all AWS resources
+
+NO DOMAIN NEEDED:
+=================
+SST automatically provides a CloudFront URL
+You can add a custom domain later if needed
+
+COST:
+=====
+Estimated: $5-20/month for small traffic
+Free tier covers most development usage
+
+WHAT GETS DEPLOYED:
+===================
+- CloudFront CDN (global) - Free SSL included
+- Lambda functions (serverless)
+- S3 buckets (static assets)
+- Auto-generated CloudFront URL
+
