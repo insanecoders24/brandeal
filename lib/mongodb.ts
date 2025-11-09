@@ -2,10 +2,6 @@ import mongoose from 'mongoose';
 
 const MONGODB_URI = process.env.DATABASE_URL;
 
-if (!MONGODB_URI) {
-    throw new Error('Please define the DATABASE_URL environment variable inside .env.local');
-}
-
 interface MongooseCache {
     conn: typeof mongoose | null;
     promise: Promise<typeof mongoose> | null;
@@ -28,6 +24,9 @@ async function dbConnect() {
     }
 
     if (!cached.promise) {
+        if (!MONGODB_URI) {
+            throw new Error('DATABASE_URL is not set. Define it in .env.local or via environment variables.');
+        }
         const opts = {
             bufferCommands: false,
         };

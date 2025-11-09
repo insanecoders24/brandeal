@@ -75,33 +75,33 @@ export default function WaitlistPage() {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 flex items-center justify-center px-4 py-12">
+        <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-teal-50 to-emerald-100 flex items-center justify-center px-4 py-12">
             {/* Background Decorations */}
-            <div className="absolute top-20 left-10 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
-            <div className="absolute top-40 right-10 w-72 h-72 bg-purple-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
-            <div className="absolute bottom-20 left-1/2 w-72 h-72 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
+            <div className="absolute top-20 left-10 w-72 h-72 bg-emerald-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+            <div className="absolute top-40 right-10 w-72 h-72 bg-teal-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+            <div className="absolute bottom-20 left-1/2 w-72 h-72 bg-emerald-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
 
             <div className="relative w-full max-w-2xl">
                 {/* Back to Home Link */}
                 <Link
                     href="/"
-                    className="inline-flex items-center text-gray-600 hover:text-blue-600 mb-6 transition-colors"
+                    className="inline-flex items-center text-gray-600 hover:text-emerald-600 mb-6 transition-colors"
                 >
                     <ArrowLeft className="w-4 h-4 mr-2" />
                     Back to Home
                 </Link>
 
                 {/* Main Card */}
-                <div className="bg-white rounded-3xl shadow-2xl overflow-hidden backdrop-blur-sm">
+                <div className="bg-white/90 rounded-3xl shadow-2xl overflow-hidden backdrop-blur-md border border-gray-200">
                     {/* Header Section with Gradient */}
-                    <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-8 md:p-10 text-white text-center">
-                        <div className="inline-flex items-center justify-center w-16 h-16 bg-white/20 backdrop-blur-sm rounded-2xl mb-4">
+                    <div className="bg-gradient-to-r from-emerald-600 to-teal-600 p-8 md:p-10 text-white text-center">
+                        <div className="inline-flex items-center justify-center w-16 h-16 bg-white/15 backdrop-blur-sm rounded-2xl mb-4">
                             <Sparkles className="w-8 h-8" />
                         </div>
                         <h1 className="text-3xl md:text-4xl font-bold mb-3">
                             Join the BranDeal Waitlist
                         </h1>
-                        <p className="text-blue-100 text-lg">
+                        <p className="text-emerald-100 text-lg">
                             Be the first to ditch spreadsheets and manage your brand deals like a pro
                         </p>
                     </div>
@@ -135,34 +135,34 @@ export default function WaitlistPage() {
                         )}
 
                         {/* Benefits Section */}
-                        <div className="mb-8 p-6 bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl border border-blue-100">
+                        <div className="mb-8 p-6 bg-gradient-to-br from-emerald-50 to-teal-50 rounded-2xl border border-emerald-100">
                             <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
-                                <Sparkles className="w-5 h-5 text-blue-600 mr-2" />
+                                <Sparkles className="w-5 h-5 text-emerald-600 mr-2" />
                                 Early Access Benefits
                             </h3>
                             <div className="grid md:grid-cols-2 gap-3">
                                 <div className="flex items-start">
-                                    <CheckCircle2 className="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                                    <CheckCircle2 className="w-5 h-5 text-emerald-600 mr-2 flex-shrink-0 mt-0.5" />
                                     <span className="text-sm text-gray-700">Lifetime discount (50% off)</span>
                                 </div>
                                 <div className="flex items-start">
-                                    <CheckCircle2 className="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                                    <CheckCircle2 className="w-5 h-5 text-emerald-600 mr-2 flex-shrink-0 mt-0.5" />
                                     <span className="text-sm text-gray-700">Priority customer support</span>
                                 </div>
                                 <div className="flex items-start">
-                                    <CheckCircle2 className="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                                    <CheckCircle2 className="w-5 h-5 text-emerald-600 mr-2 flex-shrink-0 mt-0.5" />
                                     <span className="text-sm text-gray-700">Beta access to new features</span>
                                 </div>
                                 <div className="flex items-start">
-                                    <CheckCircle2 className="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                                    <CheckCircle2 className="w-5 h-5 text-emerald-600 mr-2 flex-shrink-0 mt-0.5" />
                                     <span className="text-sm text-gray-700">Exclusive onboarding session</span>
                                 </div>
                                 <div className="flex items-start">
-                                    <CheckCircle2 className="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                                    <CheckCircle2 className="w-5 h-5 text-emerald-600 mr-2 flex-shrink-0 mt-0.5" />
                                     <span className="text-sm text-gray-700">Free migration from spreadsheets</span>
                                 </div>
                                 <div className="flex items-start">
-                                    <CheckCircle2 className="w-5 h-5 text-green-500 mr-2 flex-shrink-0 mt-0.5" />
+                                    <CheckCircle2 className="w-5 h-5 text-emerald-600 mr-2 flex-shrink-0 mt-0.5" />
                                     <span className="text-sm text-gray-700">Shape product roadmap</span>
                                 </div>
                             </div>
@@ -186,7 +186,7 @@ export default function WaitlistPage() {
                                         value={formData.name}
                                         onChange={handleChange}
                                         required
-                                        className="block w-full pl-11 pr-4 py-3.5 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all text-gray-900 placeholder-gray-400 text-base"
+                                        className="block w-full pl-11 pr-4 py-3.5 border border-gray-300 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all text-gray-900 placeholder-gray-400 text-base"
                                         placeholder="John Doe"
                                         disabled={status === 'loading'}
                                     />
@@ -209,7 +209,7 @@ export default function WaitlistPage() {
                                         value={formData.email}
                                         onChange={handleChange}
                                         required
-                                        className="block w-full pl-11 pr-4 py-3.5 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all text-gray-900 placeholder-gray-400 text-base"
+                                        className="block w-full pl-11 pr-4 py-3.5 border border-gray-300 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all text-gray-900 placeholder-gray-400 text-base"
                                         placeholder="john@example.com"
                                         disabled={status === 'loading'}
                                     />
@@ -232,7 +232,7 @@ export default function WaitlistPage() {
                                         value={formData.phone}
                                         onChange={handleChange}
                                         required
-                                        className="block w-full pl-11 pr-4 py-3.5 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all text-gray-900 placeholder-gray-400 text-base"
+                                        className="block w-full pl-11 pr-4 py-3.5 border border-gray-300 rounded-xl focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all text-gray-900 placeholder-gray-400 text-base"
                                         placeholder="+1 (555) 000-0000"
                                         disabled={status === 'loading'}
                                     />
@@ -243,7 +243,7 @@ export default function WaitlistPage() {
                             <button
                                 type="submit"
                                 disabled={status === 'loading'}
-                                className="w-full py-4 px-6 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-semibold text-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center"
+                                className="w-full py-4 px-6 bg-gradient-to-r from-emerald-600 to-teal-600 text-white rounded-xl font-semibold text-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none flex items-center justify-center"
                             >
                                 {status === 'loading' ? (
                                     <>
@@ -263,9 +263,9 @@ export default function WaitlistPage() {
                         <div className="mt-8 pt-6 border-t border-gray-200">
                             <div className="flex items-center justify-center gap-2 text-sm text-gray-600">
                                 <div className="flex -space-x-2">
-                                    <div className="w-8 h-8 rounded-full bg-gradient-to-r from-blue-400 to-blue-600 border-2 border-white"></div>
-                                    <div className="w-8 h-8 rounded-full bg-gradient-to-r from-purple-400 to-purple-600 border-2 border-white"></div>
-                                    <div className="w-8 h-8 rounded-full bg-gradient-to-r from-pink-400 to-pink-600 border-2 border-white"></div>
+                                    <div className="w-8 h-8 rounded-full bg-gradient-to-r from-emerald-400 to-emerald-600 border-2 border-white"></div>
+                                    <div className="w-8 h-8 rounded-full bg-gradient-to-r from-teal-400 to-teal-600 border-2 border-white"></div>
+                                    <div className="w-8 h-8 rounded-full bg-gradient-to-r from-cyan-400 to-cyan-600 border-2 border-white"></div>
                                 </div>
                                 <p className="font-medium">
                                     Join creators already on the waitlist
